@@ -1,0 +1,7 @@
+#elemento-1 {
+    color:red;
+}
+/* El combinador > selecciona los elementos que son hijos directos del primer elemento padre */
+ul>#elemento-1 {
+    font-size:2rem;
+}
