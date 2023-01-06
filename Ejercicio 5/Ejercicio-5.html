@@ -1,0 +1,29 @@
+<!-- Crea un nuevo documento HTML con el título "Disposición de elementos en CSS"
+
+Crea un nuevo fichero CSS e impórtalo en el documento HTML principal
+
+Utiliza la disposición flex-box para crear una galería de 6 imágenes con los siguientes parámetros
+
+Las imágenes deben tener 300 píxeles de ancho
+
+Deben reagruparse (wrap) cuando el ancho del viewport cambia -->
+
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="css/estilos.css">
+<title>Disposicion de elementos en CSS</title>
+</head>
+
+<body>
+    <div class="galeria">
+        <img class="img-galeria" src="https://storage.googleapis.com/openvitae-prod/cursos/ckwneqwac000g0452b0yk4cxl.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=openvitaebeta%40wired-coda-333713.iam.gserviceaccount.com%2F20230106%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20230106T180149Z&X-Goog-Expires=518401&X-Goog-SignedHeaders=host&X-Goog-Signature=6c4cb8c9ab7658ffbc1881ba2300394076e7a828b22ad577929103fec8ceae61f62db1c13016dfb4dc9b9a16519053c79392445a80e1555fcabe09fba0c573c769042fba99218b310cd88e22cb6df373eb909a0cd07e4a37aee05afed203897daf547c160fc145eee8ae0e0357939b1f883b638d53024d584806ee7177ce28f0eed810ed1e33ec28d677ae27421968729d0b8781cff1d568a915a277aca05917657938d44c4743cbaaa0f90ec82ead073e27274c8acf2a96dd952dfa3c15285d12f18e5fb4f7b157656214ef394749c716adce1d884d882611217ce5558e2e6c66b13c45ea316acf289456ac9c17b8a1b1842d2f449b3cb9c1f1da5597362bcd" alt="casa1">
+        <img class="img-galeria" src="https://storage.googleapis.com/openvitae-prod/cursos/ckwnpoofv00100452ekx44s5w.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=openvitaebeta%40wired-coda-333713.iam.gserviceaccount.com%2F20230106%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20230106T180149Z&X-Goog-Expires=518401&X-Goog-SignedHeaders=host&X-Goog-Signature=16b4099325625947fc45711f940ce86ab0993fde5b3461decb512032e29045415318f4483a6f296c67b0f3df21a906b1153a31c3b883c9e965e4f19cadd4571ac16f2c67be60729a20431a9a092d7775ca6bc52c96feba3178872345bacf2f115750fa96ccb595a541e9fc27e87e534af350ff587d4bbb57324d5c71a414f04fe9ee6613ab45b55f722c30db8120eb061b00a6977b9f43b55e9799f27b457d7ead78a6f2038bf8e60f1020bf9c5480b239349bc1c36674da8d093b7a9e948f5ebb1e47098dae86c79eb9374fac344711736c04d806bfde08d1a18c9d0d4771c8814574e66263a45cc9634c4241cd0f60b0f895b7875007e74b6d5d39b41c2415" alt="casa2">
+        <img class="img-galeria" src="https://storage.googleapis.com/openvitae-prod/cursos/ckwnq87m6001604525c4d0zd6.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=openvitaebeta%40wired-coda-333713.iam.gserviceaccount.com%2F20230106%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20230106T180149Z&X-Goog-Expires=518401&X-Goog-SignedHeaders=host&X-Goog-Signature=34a9221996af1142a063998b3bebe6852f7b3a6acc23ade52a7106c931546de2a15c2e9e3788744df7dab5dc8c8fdddde91a04042f100bc1aaa60f74e8552a7cd91f81fe51cdbfb4303a30027009fb45010709a49f8551042d060258c7b7c95551fb2c7e43c8a893260f8dc784be8efb8f3ccd98db01e5566976e37a54f51f33307561fdc8c926b713bb0b6b76985a49549837cf8628bbec7c12324e44daf07ccc4806568b775d7f7db9103e36afed6f533d37ae659412c25847071c1c27ba5c753291b982466c68fffd7ae25cd08e43bf49fc9630f8f19d473417b777e3448ae58f9b9abf0056582e28394bfc4a9d780880162eca7c0fc039b3d5f9747254eb" alt="casa3">
+        <img class="img-galeria" src="https://storage.googleapis.com/openvitae-prod/cursos/ckwno8yim000w0452hs9g3pxp.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=openvitaebeta%40wired-coda-333713.iam.gserviceaccount.com%2F20230106%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20230106T180150Z&X-Goog-Expires=518400&X-Goog-SignedHeaders=host&X-Goog-Signature=5193835dafb1836e653ae8475733aad29e465ad00fa4bbad4cee28137993dc04b1191e51916267d59bff8ceb748543257ec724f3c3148efcaeb5ec3208759a63ef95fde97399fe7974ef7d090d56c09e632852690f941d0905dce0f3da582a5b0ec678d382d41afeda3a57a8fb488090561749bbd25fd7e5e35ede29234021f43729e62508fb8201e7ab1d0941f7ec1e5dd0aee6c5de15b47fee06059b930c7acee96bff69fe8047b7595a99fcd3ae1b7a7a785fe29149de97028b05fac1cc58ae8383bb6a84d2545359f6ec5fa6c9ea4430244d9feaa2cd18aaddc522ec63d3816766786446c45b0474c86c37f20d8b7f1ddd2423cbc9e1d39e43df1cdabfd7" alt="casa4">
+        <img class="img-galeria" src="https://storage.googleapis.com/openvitae-prod/cursos/ckwnemhh600060452h3qa8hep.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=openvitaebeta%40wired-coda-333713.iam.gserviceaccount.com%2F20230106%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20230106T180150Z&X-Goog-Expires=518400&X-Goog-SignedHeaders=host&X-Goog-Signature=2173948546d05f795f61bc664fb2ebd0edcf4d9abfddfa8f4399bbfa7533dd49c5497503b5de0faac0eeaab4a80abeda8a639fb320762f35a635a445eb1ab723c6f81c3859941eabbcee3b8a7acf4b05588d4a175772a4d916194da00fe81002c8a921511460aec82dd8e02497f9a4f51f63185ad8c6502ccadeaa27a9678b06ac007e3538bcddb3de8fd9fd0fe238421e56facef2b66f573090246b32074a14f847f5080674bcda959290dea9cc97f63558955e037247a8f9f49a4b1cd16e16a44500dc4ec4edcc36870b9325b590a525320da2ed6de2ee7d1513c6cc1b02dab5404e58e453fcf3380f052eab055f7185bd0b56ca5f51e47e0fec0e5c7f2da9" alt="casa5">
+        <img class="img-galeria" src="https://storage.googleapis.com/openvitae-prod/cursos/ckxhcnn5w001f04sc8iefek0h.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=openvitaebeta%40wired-coda-333713.iam.gserviceaccount.com%2F20230106%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20230106T180150Z&X-Goog-Expires=518400&X-Goog-SignedHeaders=host&X-Goog-Signature=086d1c05fbfc526617b1b3c502cb56616e4b1d3fc531262fd0f733ae52cef9e344a34461fefd6c27455ed787a2a5792fcde1b527bbf195d6d6a45c1b13bda160a26998688da4fadbd75b63c2e6a34893a41100be85f99b797083f8b8ef82e3fe9ca15f90158f8bc085fce5a18afe5c34fd18849a72bf8abfe45b5426592a25153835c6fbc563599b73480af3bc360cacd25c51158d7e590e5e409782551b5649ccd5067a5e962746795f3e3fc1d1caffc89859b06b2fa7ca76a2396da159c086c173671153136b917a200a1906871f0fe3c94d5999e77c084f8594094993ab5144b40e4daab067b8d288a88fc8ab511052374096e454424be76337c5d9c0dfa0" alt="casa6">
+    </div>
+</body>
+
+</html>
