@@ -1,0 +1,26 @@
+/*  ANIMACIONES  Y  TRANSICIONES  */
+
+body {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+.btn-modern {
+  position: relative;
+  background: rgb(225, 64, 64);
+  align-items: center;
+  font-size: 30px;
+  color: #393838;
+  transition: all 0.4s ease;
+  border-radius: 20px;
+}
+
+.btn-modern:hover {
+  transform: translateY(-5px);
+  background-color: #1a73e8;
+  color: white;
+  box-shadow: 0 10px 20px rgba(246, 240, 240, 0.866);
+}
