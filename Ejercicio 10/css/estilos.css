@@ -1,0 +1,34 @@
+.contenedor {
+  display: flex;
+  flex-direction: row;    
+}
+
+.barra-lateral {
+  display: flex;
+  flex-direction: column;  
+}
+
+.seccion-principal {
+  display: flex; 
+  width: 100%;
+  height: 500px;
+  background-color: rgb(84, 200, 200);
+}
+
+.elemento {
+  display: flex;
+  background-color: rgb(29, 78, 78);
+  color: aliceblue;
+  border: 1px solid black; 
+}
+
+@media (max-width: 640px) {
+  .contenedor {
+    flex-direction: column-reverse;
+  }
+  .barra-lateral {
+    display: flex;
+    flex-direction: row;
+  }
+ 
+}
